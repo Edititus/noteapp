@@ -17,7 +17,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 
-const CONNECTION_STRING = process.env.CONNECTION_STRING || "mongodb+srv://tediomoet:2axsgltucNx90Irk@cluster0.eo1c8o1.mongodb.net/test";
+const CONNECTION_STRING = process.env.CONNECTION_STRING;
 
 (async () => {
   mongoose.connect(CONNECTION_STRING!)
